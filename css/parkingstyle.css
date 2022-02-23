@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 12pt;
+    font-family: 'Montserrat', 'Kanit', 'Ubuntu', sans-serif;
+}
+
+body {
+    background: url(../assets/img/landpark.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.allpart {
+    /* display: flex; */
+}
+
+
+/* .navbar-brand {
+    display: flex;
+} */
+
+
+/* .openBtn {
+    display: flex;
+    justify-content: left;
+}
+
+.openButton {
+    border: none;
+    border-radius: 5px;
+    background-color: #1c87c9;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    position: fixed;
+} */
+
+.loginPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.formPopup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+}
+
+.formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.formContainer input[type=text],
+.formContainer input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+}
+
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.formContainer .cancel {
+    background-color: #cc0000;
+}
+
+.formContainer .btn:hover,
+.openButton:hover {
+    opacity: 1;
+}
+
+.contain-all-parking {
+    width: 100%;
+    height: auto;
+}
+
+.large-park {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.park {
+    margin-top: 10%;
+    margin-left: 7%;
+    border: 1px solid #4e4e4e;
+    width: 85%;
+    transition: .3s ease-in-out;
+    /* padding-top: 100%; */
+}
+
+.park:hover {
+    border: 2px solid #40aed7;
+    cursor: grab;
+}
+
+#cars {
+    /* padding: 5px; */
+    margin: 20px;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.gridpark {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.park {
+    background-image: url(../assets/img/girdpark.png);
+    background-size: cover;
+}
+
+.park h3 {
+    color: #fff;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.navbar {
+    padding-right: 10%;
+}
+
+.navbar-nav li {
+    padding-right: 10%;
+}
+
+.navbar-brand img {
+    width: 10%;
+    height: 10%;
+}
+
+.nav-link {
+    font-size: 20px;
+}
